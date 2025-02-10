@@ -1,5 +1,6 @@
-age, nom
-89, "Hugo Hernan"
-60, Maria
-55, Constanza
-40,Valencia
+pid,child,parent,age
+1,John Doe,Jane Doe,30
+2,Jane Doe,John Smith,28
+3,John Smith,,35
+4,Alice Johnson,John Doe,25
+5,Bob Brown,Alice Johnson,40
