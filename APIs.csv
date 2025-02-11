@@ -1,0 +1,56 @@
+﻿name_court;type;description;doc_referential_link;version;date;format;operations;status;transactions_volume;api_HTTP_verb;api_balanced;api_endpoint_1;api_endpoint_2;api_exposed_wan;api_status codes;api_port_serveur;api_url_serveur_destination;api_ OAuth2_OIDC_AZ;api_OAuth2_OIDC_scopes;api_OAuth2_OIDC_claims
+AEHE-Programmes;API;Liste des programmes qui sont concernés par AEHE;;V 1.0;2020-02-25;;Lecture;En Prod;;Get;[primary   secundary];/aehe/v1/programme_etude;;TRUE;;3001;/programme_etude;N/A;N/A;N/A
+AEHE-Activités;API;Liste des activités (cours et stages) qui sont concernés par AEHE;;V 1.0;2020-02-25;;Lecture;En Prod;;Get;[primary   secundary];/aehe/v1/activite;;TRUE;;3001;/activite;N/A;N/A;N/A
+AEHE-CodePermanent;API;Moyen pour échanger un matricule contre un code permanent   pour un étudiant;;V 1.0;2020-02-25;;Lecture;En Prod;;Get;[primary   secundary];/aehe/v1/code_permanent;;TRUE;;3001;/code_permanent;N/A;N/A;N/A
+AEHE-Notes;API;Obtenir les notes de tous les étudiants AEHE   pour un semestre (filtres disponibles);;V 1.0;2020-02-25;;Lecture;En Prod;;Get;[primary   secundary];/aehe/v1/note_scolaire;;TRUE;;3001;/note_scolaire;N/A;N/A;N/A
+AEHE-EtudiantInfo;API;Obtenir la fiche d'inscription d'un étudiant en vue de l'inscrire dans une autre institution   pour AEHE;;V 1.0;2020-02-25;;Lecture;En Prod;;Get;[primary   secundary];/aehe/v1/etudiantInfo;;TRUE;;3001;/etudiantInfo;Azure AD;EtudiantData;Matricule
+AEHE-Logs;API;Obtenir les journaux de AEHE des derniers jours;;V 1.0;2020-07-01;;Lecture;En Prod;;Get;[primary   secundary];/aehe/v1/logs1 (primaire);"
+/aehe/v1/logs2 (secondaire)";TRUE;;3001;/logs;;;
+AEHE-Health;API;Donne l'état de l'API (pour balance de charge);;V 1.0;2020-07-01;;Lecture;En Prod;;Get;[primary   secundary];"/aehe/v1/health1 (primaire)
+";"
+/aehe/v1/health2 (secondaire)";TRUE;;3001;/health;;;
+Portail-Calendrier;API;Récupération des évènements des calendriers des étudiants depuis SYNCHRO;;V 1.0;2020-02-25;;Lecture;En Prod;;Get;[primary];/etudiants/v1/calendrier/*;;TRUE;;;;Azure AD;Etudiant;
+Portail-Notes;API;Récupérer les notes de cours depuis Studium;;V 1.0;2021-02-17;;Lecture;En Prod;;Get;[primary];/etudiants/v1/notes/*;;TRUE;;;;Azure AD;Etudiant;
+Portail-Programmes;API;Recherche dans les programmes via SAD;;V 1.0;;;Lecture;En Prod;;Get;[primary];/etudiants/v1/programmes/;;TRUE;;;;Azure AD;Etudiant;
+Portail-Trimestre;API;Retourne le trimestre courant;;V 1.0;2020-02-25;;Lecture;En Prod;;Get;[primary];/etudiants/v1/trimestre/*;;TRUE;;;;Azure AD;Etudiant OU Employé;
+Portail-Cours;API;La liste des cours d'un étudiant depuis StudiUM   via SAD et les métadonnées de StudiUM;;V 1.0;2020-02-25;;Lecture;En Prod;;Get;[primary];/etudiants/v1/cours/*;;TRUE;;;;Azure AD;Etudiant OU Employé;
+Portail-Bibliothèque;API;Récupération des dossiers d'un utilisateur de la bibliothèque. (emprunt   retard   frais de retard   etc...);;V 1.0;2020-02-25;;Lecture;En Prod;;Get;[primary];/bibliotheque/v1/dossiers/*;;TRUE;;;;Azure AD;Etudiant OU Employé;
+Portail-Bibliothèque-Horaire;API;Retourne l'horaire d'une bibliothèque;;V 1.0;2021-03-16;;Lecture;En Prod;;Get;[primary];/bibliotheques/v1/horaire/*;;TRUE;;;;Azure AD;Etudiant OU Employé;
+Portail-Bibliothèque-Liste;API;Récupération de la liste des bibliothèques;;V 1.0;2021-03-16;;Lecture;En Prod;;Get;[primary];/bibliotheque/v1/liste/*;;TRUE;;;;Azure AD;Etudiant OU Employé;
+Portail-Gestion-ActivationCarte;API;Activation d'une carte udem;;V 1.0;;;Écriture;En Prod;;Post;[primary];/gestion/v1/activationcarte/*;;TRUE;;;;Azure AD;Etudiant OU Employé;
+Portail-Gestion-Courriel;API;Envois par batch des notifications courriel;;V 1.0;2020-03-30;;Mail;En Prod;;Post;[primary];/gestion/v1/courriel/*;;TRUE;;;;Azure AD;Etudiant OU Employé;
+Portail-Gestion-Alerte;API;Envois d'alertes courriel pour la surveillance applicative;;V 1.0;2021-10-06;;Mail;En Dev;;Post;[primary];/gestion/v1/alerte/*;;TRUE;;;;Azure AD;Etudiant OU Employé;
+Portail-Moi-login;API;Récupère le login AD de l'usager (désuet);;V 1.0;;;Lecture;En Dev;;Get;[primary];/moi/v1/login/*;;TRUE;;;;Azure AD;Etudiant OU Employé;
+Portail-Carte;API;Récupère les informations pour afficher la carte étudiante dans l'app mobile;;V 1.0;2021-11-01;;Lecture;En prod;;Get;[primary];/etudiants/carteudem;;TRUE;;;;Azure AD;Etudiant;
+Portail-Moi-Groupes;API;Récupère les groupes AD de l'utilisateur;;V 1.0;2020-02-25;;Lecture;En Prod;;Get;[primary];/moi/v1/groupes/;;TRUE;;;;Azure AD;Etudiant OU Employé;
+SAÉ-DME-Patients;API;Obtenir le statut d'un étudiant ou d'un employé (actif/inactif ou cotisant aux SAÉ) et éventuellement des données personnelles comme son adresse;;V 1.0;;;Lecture;En Test;;Get;[primary];/sae/v1/dme/patients;;TRUE;;;;N/A;N/A;N/A
+SAÉ-ESH-Etudiants;API;Obtenir la liste des accommodements autorisés (codifiés) en examens avec un matricule.;;V 1.0;;;Lecture;En Test;;Get;[primary];/sae/v1/adminesh/etudiants;;TRUE;;;;N/A;N/A;N/A
+SAÉ-ESH-Cours;API;Obtenir les cours d'un étudiant en fonction du matricule et de la session courante et -1 (sigle   libellé du cours   faculté   département   trimestre   année);;V 1.0;;;Lecture;En Test;;Get;[primary];/sae/v1/adminesh/cours;;TRUE;;;;N/A;N/A;N/A
+SAÉ-ESH-Enseignants;API;Obtenir les matricules des enseignants en fonction d'un sigle de cours   trimestre   session courante et -1;;V 1.0;;;Lecture;En Test;;Get;[primary];/sae/v1/adminesh/enseignants;;TRUE;;;;N/A;N/A;N/A
+SAÉ-CARREFOUR;API;Affichage du calendrier des SAÉ pour les évènements à venir par thématiques;;V 1.0;;;Lecture;En Test;;Get;[primary];/sae/v1/internal/planif_carrefour;;TRUE;;;;N/A;N/A;N/A
+Synchro-NAGANO;API;Information pour que le système ethique puisse fonctionner;;V 1.0;2020-02-26;;Lecture;En Prod;;Get;[primary];/recherche/v1/octrois;;TRUE;;3002;/octrois;N/A;N/A;N/A
+Infra-SENS;API;Env de lab shell pour des cours variés. Objets Cours.;;V 1.0;2020-07-13;;Création;En projet;;POST;[primary];/sens/v1/cours;;TRUE;;3000;/cours;;;
+Infra-SENS;API;Env de lab shell pour des cours variés. Objets Cours.;;V 1.0;2020-07-13;;Suppression;En projet;;DELETE;[primary];/sens/v1/cours;;TRUE;;3000;/cours;;;
+Infra-SENS;API;Env de lab shell pour des cours variés. Objet Étudiant.;;V 1.0;2020-07-13;;Création;En projet;;POST;[primary];/sens/v1/cours/permissions;;TRUE;;3000;/cours/permissions;;;
+Infra-SENS;API;Env de lab shell pour des cours variés. Objet Étudiant.;;V 1.0;2020-07-13;;Suppression;En projet;;DELETE;[primary];/sens/v1/cours/permissions;;TRUE;;3000;/cours/permissions;;;
+Lara-Okta (reception webhook);API;Recevoir evenement Lära et associer utiliseurs Okta au bon groupe Okta pour Admin facultaires;;V 1.0;2021-03-01;;Événement webhook;En projet;;POST;[primary];/lmsfc/v1/receptionwebhook;;TRUE;;3004;/receptionwebhook;;;
+RDDUM-Encompass;API;Synchronisation de iModules Encompass avec Ellucian AWA;;V 1.0;2021-01-04;;Lecture/Ecriture;En Prod;;GET/PATCH;[primary];Non;;FALSE;;3003;Non;N/A;N/A;N/A
+Synchro-CVAcademique;API;Intégration Uniweb   webhook et mise à jour;;V 1.0;2021-11-22;;Lecture/Ecriture;En Prod;;GET;[primary];/cvacademique/v1/loginevent;;TRUE;;3005;/loginevent;N/A;N/A;N/A
+Synchro-Presentia;API;Intégration Présenti@   Recherche;;V 1.0;2021-05-27;;Lecture;En Prod;;GET;[primary];/dossiersante/v1/employes;;TRUE;;3006;/employes;N/A;N/A;N/A
+Synchro-Presentia;API;Intégration Présenti@   Dossier Employé;;V 1.0;2021-05-27;;Lecture;En Prod;;GET;[primary];/dossiersante/v1/employe;;TRUE;;3006;/employe;N/A;N/A;N/A
+Synchro-Presentia;API;Intégration Présenti@   Dossier Employé;;V 1.0;2023-02-02;;Lecture;En Prod;;POST;[primary];/dossiersante/v1/employe;;TRUE;;3006;/employe;N/A;N/A;N/A
+RECA-Pima (profile);API;Intégration Présenti@   Dossier Employé;;V 1.0;;;Lecture;En projet;;GET;[primary];/dossiersante/v1/employe;;TRUE;;3006;/employe;N/A;N/A;N/A
+PIMA/RECA - Profil - POUR SAR PUBLIC - PAR MTLS;API;Accès spécial et limité pour SAR PUBLIC - Service pour écrire/lire Profil pour le nouveau site SAR   dans la BD Intermédaire. Inclus aussi des appels à Synchro (lecture);;V 1.0;2024-04-25;;Lecture/Écriture;En Prod;;GET   POST   DELETE;[primary];/profil/v1/sarpublic/recherche;;FALSE;;3011;/admin/recherche;N/A;N/A;N/A
+PIMA/RECA - Profil - PAR MTLS;API;Service pour écrire/lire Profil pour le nouveau site SAR   dans la BD Intermédaire. Inclus aussi des appels à Synchro (lecture);;V 1.0;2021-09-28;;Lecture/Écriture;En Prod;;GET   POST   DELETE;[primary];/profil/v1/;;FALSE;;3011;/admin/*;N/A;N/A;N/A
+PIMA/RECA - Profil - PAR MTLS;API;Service pour écrire/lire Profil pour le nouveau site SAR   dans la BD Intermédaire. Inclus aussi des appels à Synchro (lecture);;V 1.0;2021-09-28;;Lecture/Écriture;En Prod;;GET   POST   DELETE;[primary];/profil/v1/;;FALSE;;3011;/fusion;N/A;N/A;N/A
+PIMA/RECA - Profil - PAR JETON;API;Service pour écrire/lire Profil pour le nouveau site SAR   dans la BD Intermédaire. Inclus aussi des appels à Synchro (lecture);;V 1.0;2021-09-28;;Lecture/Écriture;En Prod;;GET   POST   DELETE;[primary];/profil/v1/;;FALSE;;3011;/* (si pas un match avec ligne ci-haut);Okta;oidc email profile;Matricule   email
+PIMA/RECA - Admission - POUR SAR PUBLIC - PAR MTLS;API;"Accès spécial pour SAR PUBLIC - Service pour écrire/lire les demandes d'admission pour le nouveau site SAR   dans la BD intermédiaire. Inclus aussi des appels à Synchro (lecture/écriture)
+";;V 1.0;2024-04-25;;Lecture/Écriture;En Prod;;GET   POST   DELETE;[primary];/admission/v1/sarpublic/demandeAdmission;;FALSE;;3012;/admin/demandeAdmission;N/A;N/A;N/A
+PIMA/RECA - Admission - PAR MTLS;API;"Service pour écrire/lire les demandes d'admission pour le nouveau site SAR   dans la BD intermédiaire. Inclus aussi des appels à Synchro (lecture/écriture)
+";;V 1.0;2021-09-28;;Lecture/Écriture;En Prod;;GET   POST   DELETE;[primary];/admission/v1;;FALSE;;3012;/admin/*;N/A;N/A;N/A
+PIMA/RECA - Admission - PAR JETON;API;"Service pour écrire/lire les demandes d'admission pour le nouveau site SAR   dans la BD intermédiaire. Inclus aussi des appels à Synchro (lecture/écriture)
+";;V 1.0;2021-09-28;;Lecture/Écriture;En Prod;;GET   POST   DELETE;[primary];/admission/v1;;FALSE;;3012;/* (si pas un match avec ligne ci-haut);Okta;oidc email profile;Matricule   email
+PIMA/RECA - InfoProgrammes;API;Service exposant des informations au sujets des programmes (lecture Sycnhro);;V 1.0;2022-02-01;;Lecture;En Prod;;GET   POST   DELETE;[primary];/infoprogrammes/v1;;FALSE;;3013;/*;N/A;N/A;N/A
+PIMA/RECA - CIAM;API;Service d'Abstraction pour télécommande du fournisseur CIAM (Okta);;V 1.0;2022-02-01;;Lecture/Écriture;En Prod;;GET   POST   DELETE;[primary];/ciam/v1;;FALSE;;3014;/*;N/A;N/A;N/A
+CRN;API;Service exposant l'API pour l'application Web 'Convertisseur de notes';;V 1.0;2024-03-01;;Lecture/Écriture;En dev;;GET   POST;[primary];/convertisseur-notes/v1;;TRUE;;8080;/CRNService/*;;;
+CEPSUM-AuthentificationExtetMigration;API;2 opérations pour nécessaire pour login entre Coba et Azure AD B2C;;V 1.0;2024-04-10;;Lecture;En dev;;GET;[primary];/cepsum/federationid;;TRUE;;7443;/cepsum/federationid/*;N/A;N/A;N/A
