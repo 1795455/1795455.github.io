@@ -1,0 +1,7 @@
+﻿name_court,type,description,doc_referential_link,version,date,format,operations,status,transactions_volume,etl_source,etl_destination,etl_software,etl_transformation_name
+ETL 01,ETL,ETL Test 01,,V 1.0,2020-02-25,,Lecture,En Prod,,,,,
+ETL 02,ETL,ETL Test 02,,V 1.1,2020-02-26,,Lecture,En Prod,,,,,
+ETL 03,ETL,ETL Test 03,,V 1.2,2020-02-27,,Lecture,En Prod,,,,,
+ETL 04,ETL,ETL Test 04,,V 1.3,2020-02-28,,Lecture,En Prod,,,,,
+ETL 05,ETL,ETL Test 05,,V 1.4,2020-02-29,,Lecture,En Prod,,,,,
+ETL 06,ETL,ETL Test 06,,V 1.5,2020-03-01,,Lecture,En Prod,,,,,
