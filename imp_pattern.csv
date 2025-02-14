@@ -1,0 +1,8 @@
+pattern_id,name,description,type,doc_referential_link
+Patron 01,API Lecture,API Lecture,<<ND>>,https://nondefined.link
+Patron 02,API Lecture QAS,API Lecture QAS,<<ND>>,https://nondefined.link
+Patron 03,API Abstraction SaaS,API Abstraction SaaS,<<ND>>,https://nondefined.link
+Patron 04,ETL,ETL,<<ND>>,https://nondefined.link
+Patron 05,ETL BI,ETL BI,<<ND>>,https://nondefined.link
+Patron 06,SAD,SAD,<<ND>>,https://nondefined.link
+Patron 07,BD Dédié,BD Dédié,<<ND>>,https://nondefined.link

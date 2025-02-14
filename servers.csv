@@ -1,0 +1,8 @@
+name,description,operational_system,version,type,type, url_exposed,admin,unit_owner,gr_config,doc_referential_link
+Server 01,<<ND>>,<<ND>>,<<ND>>,DEV,PRIMARY,nondefined/PATH,<<ND>>,<<ND>>,<<ND>>,https://nondefined.link
+Server 02,<<ND>>,<<ND>>,<<ND>>,PREPROD,SECUNDARY,nondefined/PATH,<<ND>>,<<ND>>,<<ND>>,https://nondefined.link
+Server 03,<<ND>>,<<ND>>,<<ND>>,PROD,PRIMARY,nondefined/PATH,<<ND>>,<<ND>>,<<ND>>,https://nondefined.link
+Server 04,<<ND>>,<<ND>>,<<ND>>,INT,SECUNDARY,nondefined/PATH,<<ND>>,<<ND>>,<<ND>>,https://nondefined.link
+Server 05,<<ND>>,<<ND>>,<<ND>>,PREPROD,PRIMARY,nondefined/PATH,<<ND>>,<<ND>>,<<ND>>,https://nondefined.link
+Server 06,<<ND>>,<<ND>>,<<ND>>,PROD,SECUNDARY,nondefined/PATH,<<ND>>,<<ND>>,<<ND>>,https://nondefined.link
+Server 07,<<ND>>,<<ND>>,<<ND>>,INT,PRIMARY,nondefined/PATH,<<ND>>,<<ND>>,<<ND>>,https://nondefined.link
