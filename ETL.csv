@@ -1,0 +1,8 @@
+short_name,type,description,doc_referential_link,version,date,format,operations,status,transactions_volume,etl_source,etl_destination,etl_software,etl_transformation_name,app_ref,imp_pattern_ref,sec_pattern_ref,data_entity_ref
+ETL 01,ETL,ETL Test 01,https://nondefined.link,V 1.0,2020-02-25,<<ND>>,Lecture,En Prod,<<ND>>,<<ND>>,<<ND>>,<<ND>>,<<ND>>,SAE,Patron 01,Patron Sec 01,Data Entity 01
+ETL 02,ETL,ETL Test 02,https://nondefined.link,V 1.1,2020-02-26,<<ND>>,Lecture / Ecriture,En Prod,<<ND>>,<<ND>>,<<ND>>,<<ND>>,<<ND>>,Synchro ,Patron 02,Patron Sec 02,Data Entity 02
+ETL 03,ETL,ETL Test 03,https://nondefined.link,V 1.2,2020-02-27,<<ND>>,Lecture,En Prod,<<ND>>,<<ND>>,<<ND>>,<<ND>>,<<ND>>,"SiteWEB
+",Patron 03,Patron Sec 03,Data Entity 03
+ETL 04,ETL,ETL Test 04,https://nondefined.link,V 1.3,2020-02-28,<<ND>>,Lecture / Ecriture,En Prod,<<ND>>,<<ND>>,<<ND>>,<<ND>>,<<ND>>,VitrineRecherche,Patron 01,Patron Sec 04,Data Entity 04
+ETL 05,ETL,ETL Test 05,https://nondefined.link,V 1.4,2020-02-29,<<ND>>,Lecture / Ecriture,En Prod,<<ND>>,<<ND>>,<<ND>>,<<ND>>,<<ND>>,MedSIS,Patron 02,Patron Sec 01,Data Entity 05
+ETL 06,ETL,ETL Test 06,https://nondefined.link,V 1.5,2020-03-01,<<ND>>,Lecture,En Prod,<<ND>>,<<ND>>,<<ND>>,<<ND>>,<<ND>>,Synchro ,Patron 03,Patron Sec 02,Data Entity 06
